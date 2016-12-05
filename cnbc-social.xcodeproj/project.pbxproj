@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		064155EB1DF5EBB70054853F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064155EA1DF5EBB70054853F /* AppDelegate.swift */; };
-		064155ED1DF5EBB70054853F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064155EC1DF5EBB70054853F /* ViewController.swift */; };
+		064155ED1DF5EBB70054853F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064155EC1DF5EBB70054853F /* SignInVC.swift */; };
 		064155F01DF5EBB70054853F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064155EE1DF5EBB70054853F /* Main.storyboard */; };
 		064155F21DF5EBB70054853F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064155F11DF5EBB70054853F /* Assets.xcassets */; };
 		064155F51DF5EBB70054853F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 064155F31DF5EBB70054853F /* LaunchScreen.storyboard */; };
+		064155FD1DF5ECD90054853F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 064155FC1DF5ECD90054853F /* GoogleService-Info.plist */; };
+		84E8CE1B0D9203B141E3DE96 /* Pods_cnbc_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED5E7DC871EDA6AD985571B /* Pods_cnbc_social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		064155E71DF5EBB70054853F /* cnbc-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cnbc-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		064155EA1DF5EBB70054853F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		064155EC1DF5EBB70054853F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		064155EC1DF5EBB70054853F /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		064155EF1DF5EBB70054853F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		064155F11DF5EBB70054853F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		064155F41DF5EBB70054853F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		064155F61DF5EBB70054853F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		064155FC1DF5ECD90054853F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5035D09871375BEF742BB08D /* Pods-cnbc-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cnbc-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-cnbc-social/Pods-cnbc-social.release.xcconfig"; sourceTree = "<group>"; };
+		FED5E7DC871EDA6AD985571B /* Pods_cnbc_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cnbc_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFF8EEED0AB30817EEE706A /* Pods-cnbc-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cnbc-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cnbc-social/Pods-cnbc-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E8CE1B0D9203B141E3DE96 /* Pods_cnbc_social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				064155E91DF5EBB70054853F /* cnbc-social */,
 				064155E81DF5EBB70054853F /* Products */,
+				6180303D8C986691BCE788D3 /* Pods */,
+				A8042CB52609E6C7A2F41928 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		064155E91DF5EBB70054853F /* cnbc-social */ = {
 			isa = PBXGroup;
 			children = (
+				064156001DF5F0850054853F /* Model */,
+				064155FF1DF5F0800054853F /* View */,
+				064155FE1DF5F0760054853F /* Controller */,
 				064155EA1DF5EBB70054853F /* AppDelegate.swift */,
-				064155EC1DF5EBB70054853F /* ViewController.swift */,
 				064155EE1DF5EBB70054853F /* Main.storyboard */,
 				064155F11DF5EBB70054853F /* Assets.xcassets */,
 				064155F31DF5EBB70054853F /* LaunchScreen.storyboard */,
 				064155F61DF5EBB70054853F /* Info.plist */,
+				064155FC1DF5ECD90054853F /* GoogleService-Info.plist */,
 			);
 			path = "cnbc-social";
+			sourceTree = "<group>";
+		};
+		064155FE1DF5F0760054853F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				064155EC1DF5EBB70054853F /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		064155FF1DF5F0800054853F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		064156001DF5F0850054853F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6180303D8C986691BCE788D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEFF8EEED0AB30817EEE706A /* Pods-cnbc-social.debug.xcconfig */,
+				5035D09871375BEF742BB08D /* Pods-cnbc-social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8042CB52609E6C7A2F41928 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FED5E7DC871EDA6AD985571B /* Pods_cnbc_social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 064155F91DF5EBB70054853F /* Build configuration list for PBXNativeTarget "cnbc-social" */;
 			buildPhases = (
+				3C2C9704D2FCA199422E419F /* [CP] Check Pods Manifest.lock */,
 				064155E31DF5EBB70054853F /* Sources */,
 				064155E41DF5EBB70054853F /* Frameworks */,
 				064155E51DF5EBB70054853F /* Resources */,
+				03CDA8A90105D68E65BADB33 /* [CP] Embed Pods Frameworks */,
+				DB346AC024AC1D10EC4B1D3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				064155F51DF5EBB70054853F /* LaunchScreen.storyboard in Resources */,
+				064155FD1DF5ECD90054853F /* GoogleService-Info.plist in Resources */,
 				064155F21DF5EBB70054853F /* Assets.xcassets in Resources */,
 				064155F01DF5EBB70054853F /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03CDA8A90105D68E65BADB33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cnbc-social/Pods-cnbc-social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C2C9704D2FCA199422E419F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB346AC024AC1D10EC4B1D3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cnbc-social/Pods-cnbc-social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		064155E31DF5EBB70054853F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				064155ED1DF5EBB70054853F /* ViewController.swift in Sources */,
+				064155ED1DF5EBB70054853F /* SignInVC.swift in Sources */,
 				064155EB1DF5EBB70054853F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +362,7 @@
 		};
 		064155FA1DF5EBB70054853F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEFF8EEED0AB30817EEE706A /* Pods-cnbc-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D34H4ZW3AV;
@@ -272,6 +376,7 @@
 		};
 		064155FB1DF5EBB70054853F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5035D09871375BEF742BB08D /* Pods-cnbc-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D34H4ZW3AV;
@@ -302,6 +407,7 @@
 				064155FB1DF5EBB70054853F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
