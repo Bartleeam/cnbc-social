@@ -22,21 +22,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybR-p6-1Tu">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybR-p6-1Tu" customClass="FancyView" customModule="cnbc_social" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cnbc_techops_logo" translatesAutoresizingMaskIntoConstraints="NO" id="A33-GL-JgA">
-                                        <rect key="frame" x="93" y="15" width="188" height="98"/>
+                                        <rect key="frame" x="103" y="43" width="168" height="77"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="188" id="BVN-e2-aZa"/>
-                                            <constraint firstAttribute="height" constant="98" id="W2c-vN-3q7"/>
+                                            <constraint firstAttribute="width" constant="168" id="BVN-e2-aZa"/>
+                                            <constraint firstAttribute="height" constant="77" id="W2c-vN-3q7"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.64016944169998169" green="0.86344879865646362" blue="0.92414236068725586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="A33-GL-JgA" firstAttribute="centerX" secondItem="ybR-p6-1Tu" secondAttribute="centerX" id="jQK-HE-ztu"/>
-                                    <constraint firstItem="A33-GL-JgA" firstAttribute="centerY" secondItem="ybR-p6-1Tu" secondAttribute="centerY" id="u11-6v-EeW"/>
+                                    <constraint firstItem="A33-GL-JgA" firstAttribute="centerY" secondItem="ybR-p6-1Tu" secondAttribute="centerY" constant="17.5" id="u11-6v-EeW"/>
                                     <constraint firstAttribute="height" constant="128" id="wiQ-5T-vYb"/>
                                 </constraints>
                             </view>
@@ -68,7 +68,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEp-2E-twM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEp-2E-twM" customClass="RoundBtn" customModule="cnbc_social" customModuleProvider="target">
                                 <rect key="frame" x="112" y="208" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.23137254901960785" green="0.33725490196078434" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -80,19 +80,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="b17-op-wUc">
                                 <rect key="frame" x="46" y="398" width="283" height="126"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iXM-ww-VmO">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iXM-ww-VmO" customClass="FancyField" customModule="cnbc_social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.86915409482758621" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcf-Lg-BI5">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcf-Lg-BI5" customClass="FancyField" customModule="cnbc_social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="45" width="283" height="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.86915409480000005" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wky-1R-Mpc">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wky-1R-Mpc" customClass="FancyBtn" customModule="cnbc_social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="283" height="36"/>
                                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
